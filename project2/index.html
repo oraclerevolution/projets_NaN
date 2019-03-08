@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>prjet NaN 2</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <button id="hide">Menu1</button>
+        <button id="btn2">Menu2</button>
+        <img src="logo.svg" alt="logo" class="logo" />
+        <ul class="ul0">
+            <li>twitter</li>
+            <li>dribble</li>
+            <li>pinterest</li>
+            <li>linkedin</li>
+        </ul>
+    </div>
+    <nav>
+        <ul class="ul1">
+            <li>my story</li>
+            <li>process</li>
+            <li>work</li>
+            <li>fruitful <sup>beta</sup></li>
+        </ul>
+        <hr style="width:15%;position: relative;left: -25px;background-color: #ea414a;">
+        <ul class="ul2">
+            <li>contact</li>
+            <li>blog</li>
+            <li>resources</li>
+            <li>reading list</li>
+        </ul>
+    </nav>
+    <video autoplay="" loop="" muted="" src="westbrook.MP4">
+    </video>
+    
+    
+    <script>
+        $(document).ready(function(){
+            $("#btn2").hide();
+            $("nav").hide();
+            $("#hide").click(function(){
+                $("nav").hide(500);
+                $("#hide").hide();
+                $("#btn2").show();
+            });
+            $('#btn2').click(function(){
+                $("nav").show(500);
+                $("#hide").show();
+                $("#btn2").hide();
+            })
+        });
+    </script>
+</body>
+</html>

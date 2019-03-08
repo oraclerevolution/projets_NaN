@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <title>Projet 4</title>
+</head>
+<body>
+    <div class="page">
+        <img src="menu.svg" class="menu" alt="">
+        
+        <nav class="navigation">
+            <img src="logo.png" class="logo" alt="">
+            <img src="delete.svg" class="delete" alt="">
+            <ul class="ul1">
+                <li class="elem">la philosophie nan</li>
+                <li class="elem">l'école</li>
+                <li class="elem">orientation</li>
+                <li class="elem">nous rejoindre</li>
+                <li class="elem">entreprises</li>
+                <li class="elem">blog</li>
+                <li class="elem">medias</li>
+            </ul>
+            <ul class="ul2">
+                <li class="imag">
+                    <a href="">
+                        <img src="linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li class="imag">
+                    <a href="">
+                        <img src="dribbble.svg" alt="">
+                    </a>
+                </li>
+                <li class="imag">
+                    <a href="">
+                        <img src="pinterest.svg" alt="">
+                    </a>
+                </li>
+                <li class="imag">
+                    <a href="">
+                        <img src="twitter.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <p class="copy">
+                <span>
+                    Copyright &copy; NaN 2019 - <br>
+                    Organisme a but non lucratif <br>
+                    - Tous droits réservés
+                </span>
+            </p>
+            <p class="mentions"><a href="">Mentions Legales</a></p>
+            <p class="politique"><a href="">Politique de Confidentialité</a></p>
+            <p class="cgu"><a href="">CGU</a></p>
+            <p class="perso">Politique Oracle <br> Codeur,Hans Digital <br> et Spiritual</p>
+            <p class="design">Design Oracle</p>
+        </nav>
+    </div>
+
+    <script>
+            $(document).ready(function(){
+                $('.delete').hide();
+                $('.menu').click(function(){
+                    $('.navigation').toggle('slide', 'right', 500);
+                    $('.delete').show();
+                    $('.imag').hide();
+                    $('p').hide();
+                })
+                $('.delete').click(function(){
+                    $('.navigation').toggle('slide', 'left', 500);
+                })
+            })
+    </script>
+</body>
+</html>

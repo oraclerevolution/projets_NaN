@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>projet NaN 2</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <video src="westbrook.MP4" autoplay loop muted></video>
+    <div class="div1">
+            <img src="menu.svg" id="hide" class="btn-menu" height="20" />
+            <img src="delete.svg" id="btn2" class=" btn-menu" height="20" />
+            <img src="logo.svg" alt="logo" class="logo" />
+        <ul class="ul0">
+            <li><img src=twitter.svg /></li>
+            <li><img src=dribbble.svg /></li>
+            <li><img src=pinterest.svg /></li>
+            <li><img src=linkedin.svg /></li>
+        </ul>
+    </div>
+    <nav>
+        <ul class="ul1">
+            <li>my story</li>
+            <li>process</li>
+            <li>work</li>
+            <li>fruitful <sup>beta</sup></li>
+        </ul>
+        <hr style="width:15%;position: relative;left: -25px;background-color: #ea414a;">
+        <ul class="ul2">
+            <li>contact</li>
+            <li>blog</li>
+            <li>resources</li>
+            <li>reading list</li>
+        </ul>
+    </nav>
+    <div class="affiche">
+        <div class="bg"></div>
+        <div style="background-color: white;padding: 10px;">
+            <h2 class="titre">Venez voir le <br/> King Oracle</h2>
+            <p>
+                Feel free to hit me up about anything, or fill out the discovery form if you're ready to start a project.
+            </p>
+            <ul class="ul3">
+                <li> <img src="mail.png" height="20" />Ecris moi</li>
+                <li> <img src="twitter.svg"/> Tweet moi</li>
+            </ul>
+            <button class="begin">Commencer un projet</button>
+        </div>
+    </div>
+    <div class="call"><img class="photo" src="assia%20photo.jpg" /> Appelez moi</div>
+    <script>
+        $(document).ready(function(){
+            $('.affiche').hide();
+            $('.overlay').hide();
+            $("#btn2").hide();
+            $("nav").hide();
+            $('.call').click(function(){
+               $('.affiche').slideToggle(200); 
+            })
+            $("#hide").click(function(){
+                $("nav").toggle('slide', 'right', 500);
+                $("#hide").hide();
+                $("#btn2").show();
+                $('.overlay').show().toogle('slide', 'left',100);
+            });
+            $('#btn2').click(function(){
+                $("nav").toggle('slide', 'left', 500);
+                $("#hide").show();
+                $("#btn2").hide();
+                $('.overlay').hide().toogle('slide', 'right',500);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+    html{
+    background-color: black;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-family: 'Corda', sans-serif;
+}
+video{
+    position: relative;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    padding-bottom: 50px;
+    border-radius: 5px;
+}
+.div1{
+    float: left;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100px;
+    color: rgb(131, 130, 130);
+    min-height: 100%;
+    z-index: 1;
+}
+.ul0{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+}
+.ul0 li{
+    padding: 10px
+}
+.logo{
+    position: absolute;
+    top: 37%;
+    left: 30px;
+}
+.btn-menu{
+    position: absolute;
+    left: 30%;
+    top: 4%
+}
+nav{
+    float: left;
+    color: rgb(131, 130, 130);
+    width: 250px;
+    padding-top: 50px;
+    height: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left:100px;
+    background-color: black;
+}
+nav ul{
+    padding-top: 15px;
+    padding-left: 0;
+    
+}
+nav li{
+    list-style: none;
+    text-align: center;
+    text-transform: capitalize;
+    padding:10px;
+    margin-bottom: 15px;
+    min-width: 100%;
+    font-size: 130%;
+    font-weight: 700;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+.call{
+    color: white;
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    margin-right: 50px;
+    background-color: #6da336;
+    height: 60px;
+    min-width: 60px;
+    padding: 0 20px 0 0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+.call:hover{
+    background-color: #abf760;
+    color:#41790b;
+    cursor: pointer;
+}
+.affiche{
+    border: 1px solid white;
+    width: 300px;
+    position: fixed;
+    top:30px;
+    right:2.5%;
+    z-index: 5;
+}
+.bg{
+    display: flex;
+    height: 160px;
+    align-items: flex-end;
+    background-image: url(assia%20photo.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.photo{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+.ul3{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-left: 12px;
+}
+.ul3 li{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.titre{
+    margin-top: 0;
+    padding: 20px;
+    padding-left: 30px;
+}
+.begin{
+    height: 50px;
+    background-color: #ea414a;
+    color: white;
+    font-weight: bold;
+    padding: 16px 30px 20px;
+    border-radius: 2px;
+}
+.begin:active{
+    box-shadow:  inset 0 0 50px -25px rgba(217,74,81,0), 1px 1px 50px 5px rgba(217,74,81)
+}
+.begin:hover{
+    padding-right: 60px;
+    padding-left: 40px;
+    color: #fff;
+}
