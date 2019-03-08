@@ -53,11 +53,15 @@ body{
     font-size: 11px;
     padding: 10px;
 }
+.ul2{
+    border: 1px solid red;
+    padding-left:0;
+}
 .texte{
     position: absolute;
     bottom: 0;
     text-align: center;
-    left: 25%;
+    left: 18%;
 }
 .no{
     list-style: none;
@@ -71,7 +75,7 @@ body{
 .navigation .imag{
     display: inline-block;
     margin: 5px;
-    margin-right: 7%;
+    margin-right: 2%;
 }
 .copy{
     font-size: 11px;
