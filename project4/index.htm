@@ -4,80 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="jquery-ui.js"></script>
-    <title>Projet 4</title>
+    <title>Document</title>
 </head>
 <body>
     <div class="page">
-        <img src="menu.svg" class="menu" alt="">
-        
-        <nav class="navigation">
-            <img src="logo.png" class="logo" alt="">
-            <img src="delete.svg" class="delete" alt="">
+        <img src="images/menu.svg" class="menu" alt="">
+        <img src="images/42_logo.svg" class="logoBlanc" alt="">
+        <div class="navigation">
+            <img src="images/42_logo_black.svg" class="logo" alt="">
+            <img src="images/deleteNoir.svg" class="delete" alt="">
             <ul class="ul1">
-                <li class="elem">la philosophie nan</li>
-                <li class="elem">l'école</li>
-                <li class="elem">orientation</li>
-                <li class="elem">nous rejoindre</li>
-                <li class="elem">entreprises</li>
-                <li class="elem">blog</li>
-                <li class="no">medias</li>
+                <li><a href="">La philosophie 42</a></li>
+                <li><a href="">L'école</a></li>
+                <li><a href="">Orientation</a></li>
+                <li><a href="">Nous rejoindre</a></li>
+                <li><a href="">entreprises</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">medias</a></li>
             </ul>
-            
-            <div class="texte">
-                    <ul class="ul2">
-                            <li class="imag">
-                                <a href="">
-                                    <img src="linkedin.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="imag">
-                                <a href="">
-                                    <img src="dribbble.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="imag">
-                                <a href="">
-                                    <img src="pinterest.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="imag">
-                                <a href="">
-                                    <img src="twitter.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                <p class="copy">
-                    <span>
-                        Copyright &copy; NaN 2019 - <br>
-                        Organisme a but non lucratif <br>
-                        - Tous droits réservés
-                    </span>
-                </p>
-                <p class="mentions"><a href="">Mentions Legales</a></p>
-                <p class="politique"><a href="">Politique de Confidentialité</a></p>
-                <p class="cgu"><a href="">CGU</a></p>
-                <p class="perso">Politique Oracle <br> Codeur,Hans Digital <br> et Spiritual</p>
-                <p class="design">Design Oracle</p>
+            <div class="bottom">
+                <ul class="ul2">
+                    <li>
+                        <img src="images/linkedin.svg" alt="" />
+                    </li>
+                    <li>
+                        <img src="images/twitter.svg" alt="" />
+                    </li>
+                    <li>
+                        <img src="images/pinterest.svg" alt="" />
+                    </li>
+                    <li>
+                        <img src="images/dribbble.svg" alt="" />
+                    </li>
+                </ul>
+                <div class="textes">
+                    <p>Copyright © 42 2017 - <br> Organisme à but non lucratif <br> - Tous droits réservés.</p>
+                    <p><a href="">Mentions légales</a></p>
+                    <p><a href="">Politique de Confidentialité</a></p>
+                    <p><a href="">CGU</a></p>
+                    <p>Design by Oracle</p>
+                </div>
             </div>
-        </nav>
+        </div>
+        <div class="ligne1">
+            <div class="gauche">
+                <h1>
+                    42 <br> BORN TO <br> <span class="code">CODE ?</span>
+                </h1>
+            </div>
+            <div class="droite">
+                <p>
+                    42 est la première formation en informatique entièrement gratuite, ouverte à toutes et à <br>
+                    tous sans condition de diplôme et accessible aux 18-30 ans. Sa pédagogie est basée <br> 
+                    sur le peer-to-peer learning : un fonctionnement participatif, sans cours, sans professeur, qui <br>
+                    permet aux étudiants de libérer toute leur créativité grâce à l’apprentissage par projets. 42 a été <br>
+                    fondée à l’initiative de Xavier Niel en 2013 alors que l’industrie du numérique en France <br>
+                    subissait une importante pénurie de développeurs informatiques. Pour former en grand nombre <br>
+                    les meilleurs talents de demain, l’établissement met à disposition les meilleures infrastructures <br>
+                    dans des lieux innovants et modernes à Paris et Fremont (Silicon Valley). 42, est notre <br>
+                    réponse à ce que devrait être l’école de demain.
+                </p>
+                <h4>Tu envisages de participer à l’aventure 42 ? Alors tente le coup :</h4>
+                <button>CANDIDATE ICI</button>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="ligne2">
+            <div class="gauche">
+                <h3>LE PREMIER HACKATON BORN2HACK EST UN SUCCÈS</h3>
+                <p>Avec le hackathon Born2hack, 42 a organisé son 
+                    hackathon ! Les étudiants devaient concevoir des 
+                    améliorations futuristes autour du thème 
+                    #pimpmyschool
+                </p>
+                <a href="">LIRE LA SUITE</a>
+            </div>
+            
+            <div class="droite">
+
+            </div>
+        </div>
     </div>
 
     <script>
-            $(document).ready(function(){
-                $('.delete').hide();
-                $('.menu').click(function(){
-                    $('.navigation').toggle('slide', 'right', 500);
-                    $('.delete').show();
-                    $('.imag').hide();
-                    $('p').hide();
-                })
-                $('.delete').click(function(){
-                    $('.navigation').toggle('slide', 'left', 500);
-                })
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('.navigation').toggle('slide', 'right', 900);
+                $('.delete').css('display', 'block');
+            });
+            $('.delete').click(function(){
+                $('.navigation').toggle('slide', 'left', 900);
             })
+            
+        })
     </script>
 </body>
 </html>
